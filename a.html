@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="#">
+        <label for="Task Name">Task Name</label>
+        <input type="text" name="TodoName" id="todoname" class="form-control">
+        <label for="descp">Description</label>
+        <input type="text" name="descp" id="descrp">
+        <button class="button button-alert" type="submit" id="Submit">Submit</button>
+    </form>
+
+    <table id="table" style="width: 100%;">
+      <tr >
+        <td>To-DO name</td>
+        <td>To-DO Description</td>
+        <td>Action</td>
+      </tr>  
+    </table>
+    <table id="done_todolist">
+        <tr>
+          <td>
+            To-do Task Completed
+          </td>  
+        </tr>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

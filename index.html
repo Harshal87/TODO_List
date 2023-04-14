@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- Bootstrap CSS
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css"> -->
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #0275d8;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #0275d8;
+        }
+
+        .table1 {
+            margin-top: 30px;
+            border: none;
+            background-color: #fff;
+        }
+
+        .table1 th {
+            background-color: #0275d8;
+            color: #f21717;
+            font-weight: bold;
+        }
+
+        .table1 tbody tr:hover {
+            background-color: #f7f7f7;
+        }
+
+        .btn-primary {
+            background-color: #0275d8;
+            border: none;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 767px) {
+            .header {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header">
+                    <h1>To-Do List</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="#" class="mb-3">
+                    <div class="mb-3">
+                        <label for="todoname" class="form-label">Task Name</label>
+                        <input type="text" name="TodoName" id="todoname" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="descrp" class="form-label">Description</label>
+                        <input type="text" name="descp" id="descrp" class="form-control">
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit" id="Submit">Add Task</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="alert alert-success" role="alert">
+                    <strong>Well done!</strong> You have completed all tasks.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table id="table" class="table table-bordered">
+                    <thead id="table">
+                        <tr>
+                            <th>Pending Tasks</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- To-Do items will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <table id="table1" class="table table-bordered">
+                    <thead id="done_todolist">
+                        <tr>
+                            <th>Completed Tasks</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- To-Do items will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+   <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
